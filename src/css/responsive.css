@@ -1,0 +1,22 @@
+@media(max-width:425px) {
+    body {
+        background: url(../images/bg-mobile.svg) var(--cor-padrão) no-repeat;
+        background-size: cover;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero .text-register {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .social {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}

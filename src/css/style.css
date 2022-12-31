@@ -1,0 +1,108 @@
+body {
+    background: url(../images/bg-desktop.svg) var(--cor-padrão) no-repeat;
+    background-size: cover;
+    margin: 30px;
+}
+
+/* HEADER */
+
+.header img {
+    width: 150px;
+    margin-bottom: 18px;
+}
+
+/* HERO */
+
+.hero {
+    display: flex;
+    gap: 50px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero .text-register {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+.hero .text-register .title {
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 15px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero .text-register p {
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 500px;
+    line-height: 25px;
+    padding-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hero .text-register .btn-register {
+    width: 30%;
+    padding: 15px 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    color: var(--cor-padrão);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.hero .text-register .btn-register:hover {
+    background-color: var(--cor-padrão);
+    color: #fff;
+    transition: 0.6s;
+}
+
+.hero .text-register p,
+.hero .text-register .btn-register {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hero .text-register .title,
+.hero .text-register p {
+    color: #fff;
+}
+
+/* FOOTER */
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    gap: 15px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.social .facebook:hover {
+    background-color: blue;
+}
+
+.social .twitter:hover {
+    background-color: rgb(71, 209, 255);
+}
+
+.social .instagram:hover {
+    background-color: rgb(160, 31, 160);
+}
+
+.social a:hover {
+    transition: 0.5s;
+}
