@@ -1,26 +1,39 @@
 body {
-    background: url(../images/bg-desktop.svg) var(--cor-padrão) no-repeat;
+    background: url(../images/bg-desktop.svg) var(--cor-padrao-violeta) no-repeat;
     background-size: cover;
-    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 60px;
+    height: 100vh;
 }
 
 /* HEADER */
 
+.header {
+    margin-bottom: 35px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
 .header img {
-    width: 150px;
-    margin-bottom: 18px;
+    max-width: 200px;
 }
 
 /* HERO */
 
 .hero {
+    width: 100%;
     display: flex;
-    gap: 50px;
+    gap: 60px;
+    max-width: 1440px;
 }
 
 .hero img {
-    max-width: 100%;
-    height: auto;
+    max-width: 70%;
 }
 
 .hero .text-register {
@@ -39,10 +52,9 @@ body {
 .hero .text-register p {
     font-size: 2rem;
     font-weight: 400;
-    max-width: 500px;
+    max-width: 100%;
     line-height: 25px;
     padding-bottom: 20px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .hero .text-register .btn-register {
@@ -51,12 +63,12 @@ body {
     border-radius: 25px;
     cursor: pointer;
     border: none;
-    color: var(--cor-padrão);
+    color: var(--cor-padrao-violeta);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .hero .text-register .btn-register:hover {
-    background-color: var(--cor-padrão);
+    background-color: var(--cor-padrao-rosa);
     color: #fff;
     transition: 0.6s;
 }
@@ -73,9 +85,15 @@ body {
 
 /* FOOTER */
 
-.social {
+.footer {
     display: flex;
     justify-content: flex-end;
+    width: 100%;
+    padding-top: 4%;
+}
+
+.social {
+    display: flex;
     font-size: 1.5rem;
     gap: 15px;
 }
@@ -91,18 +109,14 @@ body {
     height: 30px;
 }
 
-.social .facebook:hover {
-    background-color: blue;
-}
-
-.social .twitter:hover {
-    background-color: rgb(71, 209, 255);
-}
-
-.social .instagram:hover {
-    background-color: rgb(160, 31, 160);
-}
-
-.social a:hover {
+.social a:hover,
+.social i:hover {
+    border-color: var(--cor-padrao-rosa);
+    color: var(--cor-padrao-rosa);
     transition: 0.5s;
 }
+
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
